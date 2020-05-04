@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Удаление Поезда {% endblock %}
+
+{% block content %}
+    <div class="display-4">Удалить Поезда</div>
+    <div class="row mx-auto">
+        <div class="col-md-4">
+            <form method="post">{% csrf_token %}
+                <p>Действительно хотите удалить город "{{ object }}"?</p>
+                <input type="submit" value="Удалить">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

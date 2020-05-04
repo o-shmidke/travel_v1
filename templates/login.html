@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} Авторизация {% endblock %}
+
+{% block content %}
+    <div class="display-4">Авторизация</div>
+    <div class="row mx-auto">
+        <div class="col-md-6">
+            <form method="post">{% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %} Маршруты {% endblock %}
+
+{% block content %}
+    <div class="display-4 text-center my-4">Маршруты</div>
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <table class="table table-striped ">
+            <thead>
+                <tr>
+                    <th>Название маршрута</th>
+                    <th>Откуда</th>
+                    <th>Куда</th>
+                    <th>Время в пути</th>
+                    <th> &nbsp;</th>
+
+                </tr>
+            </thead>
+                <tbody>
+
+                {% for object in object_list %}
+                    <tr>
+                        <td><a href="{% url 'detail' pk=object.pk %}">{{ object.name }}</a></td>
+                        <td>{{ object.from_city }}</td>
+                        <td>{{ object.to_city }}</td>
+                        <td class="text-center">{{ object.travel_time}}</td>
+
+                        <td><a href="{% url 'delete' pk=object.pk %}"
+                               class="btn btn-outline-danger btn-sm">Удалить</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
