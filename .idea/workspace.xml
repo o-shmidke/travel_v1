@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="713f2b81-f4ef-49a9-bf01-c18ae961e2e2" name="Default Changelist" comment="" />
+    <list default="true" id="713f2b81-f4ef-49a9-bf01-c18ae961e2e2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/travel/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/travel/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/travel/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
